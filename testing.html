@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype.1</title>
+</head>
+<body>
+<script>
+// -- star -- //
+var gNumber = Math.floor(Math.random() * 100); // Goal Number
+var uInput = prompt("deviner en un nombre entre 0 et 100:"); // User input
+var trysin = 10; // 10 (?)
+var winMsg = "wiiiinnnn!!!"
+var lossMsg = "Game Over!!!"
+function main () {
+    while (trysin > 0){
+        if (uInput == gNumber)
+        alert(winMsg);à
+        else if (uInput > gNumber)
+        prompt("Try smaller!");
+        trysin--;
+
+    }
+} // function close
+
+main ()
+</script>
+</body>
+</html>

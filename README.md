@@ -1,2 +1,2 @@
-# Projet6-Jeu-JavaScript
-Jeu en JavaScript
+# Projet6-Jeu-JavaScript : 
+✔️ Jeu en JavaScript.

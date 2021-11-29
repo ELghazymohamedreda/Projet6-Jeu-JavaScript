@@ -1,53 +1,21 @@
-// 
-var randomNumber = Math.floor(Math.random() * 100);
-console.log(randomNumber)
-var attempts =10;
-var lostMessage = "Raté!";
-var tentatives = document.getElementById("tentatives");
-var message = document.getElementById("message")
+ // declaration des variables 
+ var randomNumber;
+ var userInput;
+ var message;
+ // entrer: saiser 
+  randomNumber = Math.floor(Math.random() * 100);
+  userInput = prompt("Entrez un numéro");
+ // traitement 
+ var n = parseInt(userInput);
+ if (randomNumber > userInput) {
 
+     message = "il est supérieur à " + " " + userInput;
 
-function writeattempts () {
-    tentatives.innerHTML = attempts;
-    console.log(attempts)
-}
+ }
 
+ else{
 
-function onSubmit (){
-    --attempts;
-    if(attempts > 0){
-        var userInput = document.getElementById("deviner-input").value;
-        if(isNaN(userInput) ){
-            alert("Please Enter a Number!")
-        } else {
-            isCorrect(userInput)
-        }
-        userInput.value = ""
-    } else {
-        message.innerHTML = lostMessage
-        tentatives.innerHTML = 0;
-    }
-}
-
-function isCorrect(userInput) {
-    
-var itIsSmall = "C'est plus petit que " + userInput + ", essayez plus"
-var itIsBigger = "C'est plus grand que " + userInput + ", essayez plus"
-
-        if (userInput == randomNumber){
-            var winMessage = "Félicitations, vous avez gagné après " + attempts + " tentatives";
-
-            alert(winMessage);
-        } else if (userInput > randomNumber){
-            message.innerHTML = itIsSmall
-            writeattempts() 
-
-        } else if (userInput < randomNumber){
-            message.innerHTML = itIsBigger
-            writeattempts() 
-
-        }
- 
-}
-
-
+     message = "il est plus petit que " + " " + userInput;
+ }
+ // sortie: Affichage
+ alert(message);

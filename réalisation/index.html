@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> 🎲 Guess the Number.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1> 🎲 Devinez un Nombre :</h1>
+            <p class="subtitle">Deviner en un nombre entre 1 et 100</p>
+            <input id="userInput" type="text" placeholder="Nombre ici.">
+            <p class="tries">Tentatives : <span id="attemptsMessage">10</span></p>
+            <button onclick=triggerMe() class="btn">Devinez</button>
+            <p id="message"></p>
+        </div>
+      
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
